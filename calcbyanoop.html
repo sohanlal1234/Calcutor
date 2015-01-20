@@ -147,15 +147,16 @@ function d()
 
 dd=document.getElementById("d").value;
 var dd1="";
-var len=dd.length;
+var len=dd.length-1;
 console.log((dd.length));
-for(i=0;i>len;i++)
+while(len)
 {
-dd1+=dd[i];
+dd1+=dd[len];
+len--;
 }
 
 document.getElementById("d").value=dd1;
-console.log((dd1));
+console.log((len));
 }
 
 </script>
